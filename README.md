@@ -24,7 +24,8 @@ Feito com **HTML, CSS e JavaScript puro**, focado em código simples e legível.
 - HTML5  
 - CSS3  
 - JavaScript (ES6+)  
-- localStorage  
+- localStorage
+- Boostrap
 
 ---
 
