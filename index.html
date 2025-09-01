@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda To-Do List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .url {
+        background-image: url("./css/imagens/mirrodin.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; 
+        padding-bottom: 60px; 
+        }
+
+        footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 10px 0;
+        }
+        
+        li.completed {
+        text-decoration: line-through;
+        color: gray;
+        }
+
+        .delete-btn {
+        cursor: pointer;
+        color: red;
+        }
+    </style>
+    </head>
+    <body class="url">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 bg-primary text-white p-2 rounded">Minha Agenda</h1>
+        
+        <form id="form" class="d-flex mb-3">
+        <input type="text" id="input" class="form-control me-2" placeholder="Nova tarefa..." required>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+        
+        <ul id="list" class="list-group"></ul>
+    </div>
+
+    <footer class="bg-primary">
+        <p class="mb-0">© 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
